@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1280" viewBox="0 0 1536 1280" role="img" aria-labelledby="title description" lang="en" style="color-scheme:dark">
+  <title id="title">Six perspectives for planning and review</title>
+  <desc id="description">The map shows how the six design perspectives connect. Components belong to architectural participants and communicate through exchanges. Exchanges carry state elements, and tests target required capabilities. The target question also covers intentions and rules.</desc>
+  <defs>
+    <marker id="ordinary-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#a6bac4" />
+    </marker>
+    <marker id="evidence-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#ccb8f0" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1536" height="1280" rx="0" fill="#131b23" stroke="none" stroke-width="1" />
+  <rect x="0.75" y="0.75" width="1534.5" height="1278.5" rx="8" fill="none" stroke="#475866" stroke-width="1.5" />
+  <g id="heading">
+    <text x="30" y="39" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#edf1f2" font-weight="700" letter-spacing="1.5">DESIGN METHODOLOGY</text>
+    <text x="29" y="94" font-family="Georgia, 'Times New Roman', serif" font-size="45" fill="#edf1f2">Six perspectives for planning and review</text>
+    <text x="30" y="131" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#c4d0d6">Read from domain to verification when planning. When something changes, follow the connections in either direction.</text>
+  </g>
+  <g data-perspective="Domain">
+    <rect x="30" y="157" width="231" height="79" rx="8" fill="#20332e" stroke="#3b5a4c" stroke-width="1" />
+    <line x1="42" y1="159" x2="249" y2="159" stroke="#8adbb5" stroke-width="3" />
+    <text x="46" y="205" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#8adbb5" font-weight="700">Domain</text>
+    <path d="M 267.5 191 l 5 6 l -5 6" fill="none" stroke="#acbdc6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <g data-facet="Purpose and Scope">
+      <rect x="30" y="249" width="231" height="124" rx="7" fill="#17212a" stroke="#3b5a4c" stroke-width="1" />
+      <text x="46" y="279" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8adbb5" font-weight="700">Purpose and Scope</text>
+      <text x="46" y="309" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What problem does</text>
+      <text x="46" y="333" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">this solve?</text>
+      <text x="46" y="357" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What is in scope?</text>
+    </g>
+    <g data-facet="Concepts">
+      <rect x="30" y="384" width="231" height="148" rx="7" fill="#17212a" stroke="#3b5a4c" stroke-width="1" />
+      <text x="46" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8adbb5" font-weight="700">Concepts</text>
+      <text x="46" y="444" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Which terms need</text>
+      <text x="46" y="468" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">distinct meanings?</text>
+    </g>
+    <g data-facet="Participants">
+      <rect x="30" y="543" width="231" height="124" rx="7" fill="#17212a" stroke="#3b5a4c" stroke-width="1" />
+      <text x="46" y="573" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8adbb5" font-weight="700">Participants</text>
+      <text x="46" y="603" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Who uses, shapes, or</text>
+      <text x="46" y="627" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">secures the system?</text>
+    </g>
+    <g data-facet="Intentions">
+      <rect x="30" y="678" width="231" height="124" rx="7" fill="#17212a" stroke="#3b5a4c" stroke-width="1" />
+      <text x="46" y="708" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8adbb5" font-weight="700">Intentions</text>
+      <text x="46" y="738" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What outcome does</text>
+      <text x="46" y="762" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">each participant want</text>
+      <text x="46" y="786" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">to preserve?</text>
+    </g>
+    <g data-facet="Rules">
+      <rect x="30" y="813" width="231" height="172" rx="7" fill="#17212a" stroke="#3b5a4c" stroke-width="1" />
+      <text x="46" y="843" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8adbb5" font-weight="700">Rules</text>
+      <text x="46" y="873" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Which constraints</text>
+      <text x="46" y="897" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">protect an outcome?</text>
+      <text x="46" y="921" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">When do they apply?</text>
+    </g>
+    <g data-facet="Required capabilities">
+      <rect x="30" y="996" width="231" height="171" rx="7" fill="#17212a" stroke="#3b5a4c" stroke-width="1" />
+      <text x="46" y="1026" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8adbb5" font-weight="700">Required</text>
+      <text x="46" y="1049" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8adbb5" font-weight="700">capabilities</text>
+      <text x="46" y="1079" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What must the system</text>
+      <text x="46" y="1103" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">let its users do?</text>
+    </g>
+  </g>
+  <g data-perspective="Architecture">
+    <rect x="279" y="157" width="231" height="79" rx="8" fill="#202f3c" stroke="#41596e" stroke-width="1" />
+    <line x1="291" y1="159" x2="498" y2="159" stroke="#9bcaf0" stroke-width="3" />
+    <text x="295" y="205" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#9bcaf0" font-weight="700">Architecture</text>
+    <path d="M 516.5 191 l 5 6 l -5 6" fill="none" stroke="#acbdc6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <g data-facet="System context">
+      <rect x="279" y="249" width="231" height="269" rx="7" fill="#17212a" stroke="#41596e" stroke-width="1" />
+      <text x="295" y="279" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#9bcaf0" font-weight="700">System context</text>
+      <text x="295" y="309" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What are the system’s</text>
+      <text x="295" y="333" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">responsibilities?</text>
+      <text x="295" y="357" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Which external</text>
+      <text x="295" y="381" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">participants interact</text>
+      <text x="295" y="405" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">with it?</text>
+    </g>
+    <g data-facet="Runtime units">
+      <rect x="279" y="529" width="231" height="335" rx="7" fill="#17212a" stroke="#41596e" stroke-width="1" />
+      <text x="295" y="559" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#9bcaf0" font-weight="700">Runtime units</text>
+      <text x="295" y="589" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Where does each part</text>
+      <text x="295" y="613" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">run? Which parts</text>
+      <text x="295" y="637" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">share an execution</text>
+      <text x="295" y="661" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">environment?</text>
+    </g>
+    <g data-facet="Architectural participants">
+      <rect x="279" y="875" width="231" height="292" rx="7" fill="#17212a" stroke="#41596e" stroke-width="1" />
+      <text x="295" y="905" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#9bcaf0" font-weight="700">Architectural</text>
+      <text x="295" y="928" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#9bcaf0" font-weight="700">participants</text>
+      <text x="295" y="958" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Which part takes</text>
+      <text x="295" y="982" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">responsibility for each</text>
+      <text x="295" y="1006" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">required capability?</text>
+    </g>
+  </g>
+  <g data-perspective="Subsystem Design">
+    <rect x="528" y="157" width="231" height="79" rx="8" fill="#342a25" stroke="#654e42" stroke-width="1" />
+    <line x1="540" y1="159" x2="747" y2="159" stroke="#edb594" stroke-width="3" />
+    <text x="544" y="191" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#edb594" font-weight="700">Subsystem</text>
+    <text x="544" y="217" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#edb594" font-weight="700">Design</text>
+    <path d="M 765.5 191 l 5 6 l -5 6" fill="none" stroke="#acbdc6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <g data-facet="Local capabilities">
+      <rect x="528" y="249" width="231" height="306" rx="7" fill="#17212a" stroke="#654e42" stroke-width="1" />
+      <text x="544" y="279" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edb594" font-weight="700">Local capabilities</text>
+      <text x="544" y="309" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What work is</text>
+      <text x="544" y="333" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">assigned to this</text>
+      <text x="544" y="357" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">component? What</text>
+      <text x="544" y="381" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">does it produce?</text>
+    </g>
+    <g data-facet="Configuration controls">
+      <rect x="528" y="566" width="231" height="239" rx="7" fill="#17212a" stroke="#654e42" stroke-width="1" />
+      <text x="544" y="596" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edb594" font-weight="700">Configuration</text>
+      <text x="544" y="619" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edb594" font-weight="700">controls</text>
+      <text x="544" y="649" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Which setting</text>
+      <text x="544" y="673" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">changes a</text>
+      <text x="544" y="697" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">component’s</text>
+      <text x="544" y="721" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">behavior? Who reads</text>
+      <text x="544" y="745" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">it, and when?</text>
+    </g>
+    <g data-facet="Components">
+      <rect x="528" y="816" width="231" height="351" rx="7" fill="#17212a" stroke="#654e42" stroke-width="1" />
+      <text x="544" y="846" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edb594" font-weight="700">Components</text>
+      <text x="544" y="876" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Which components</text>
+      <text x="544" y="900" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">implement the</text>
+      <text x="544" y="924" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">subsystem’s</text>
+      <text x="544" y="948" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">behavior?</text>
+    </g>
+  </g>
+  <g data-perspective="Subsystem Interfaces">
+    <rect x="777" y="157" width="231" height="79" rx="8" fill="#1d3137" stroke="#3b5b61" stroke-width="1" />
+    <line x1="789" y1="159" x2="996" y2="159" stroke="#8ed7df" stroke-width="3" />
+    <text x="793" y="191" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#8ed7df" font-weight="700">Subsystem</text>
+    <text x="793" y="217" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#8ed7df" font-weight="700">Interfaces</text>
+    <path d="M 1014.5 191 l 5 6 l -5 6" fill="none" stroke="#acbdc6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <g data-facet="Interfaces">
+      <rect x="777" y="249" width="231" height="306" rx="7" fill="#17212a" stroke="#3b5b61" stroke-width="1" />
+      <text x="793" y="279" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8ed7df" font-weight="700">Interfaces</text>
+      <text x="793" y="309" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Contract</text>
+      <text x="793" y="332" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">How can one</text>
+      <text x="793" y="356" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">component ask</text>
+      <text x="793" y="380" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">another to do work?</text>
+      <line x1="793" y1="401" x2="992" y2="401" stroke="#3b5b61" stroke-width="1" />
+      <text x="793" y="425" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Provider and caller</text>
+      <text x="793" y="448" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Who provides this</text>
+      <text x="793" y="472" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">interface, and who</text>
+      <text x="793" y="496" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">calls it?</text>
+    </g>
+    <g data-facet="Exchanges">
+      <rect x="777" y="566" width="231" height="601" rx="7" fill="#17212a" stroke="#3b5b61" stroke-width="1" />
+      <text x="793" y="596" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#8ed7df" font-weight="700">Exchanges</text>
+      <text x="793" y="626" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Content</text>
+      <text x="793" y="649" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What crosses the</text>
+      <text x="793" y="673" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">boundary, in which</text>
+      <text x="793" y="697" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">direction?</text>
+      <line x1="793" y1="887" x2="992" y2="887" stroke="#3b5b61" stroke-width="1" />
+      <text x="793" y="911" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Meaning</text>
+      <text x="793" y="934" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">How does each side</text>
+      <text x="793" y="958" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">interpret what is</text>
+      <text x="793" y="982" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">present or missing?</text>
+    </g>
+  </g>
+  <g data-perspective="State Management">
+    <rect x="1026" y="157" width="231" height="79" rx="8" fill="#322e23" stroke="#60563e" stroke-width="1" />
+    <line x1="1038" y1="159" x2="1245" y2="159" stroke="#dfc98f" stroke-width="3" />
+    <text x="1042" y="191" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#dfc98f" font-weight="700">State</text>
+    <text x="1042" y="217" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#dfc98f" font-weight="700">Management</text>
+    <path d="M 1263.5 191 l 5 6 l -5 6" fill="none" stroke="#acbdc6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <g data-facet="State elements">
+      <rect x="1026" y="249" width="231" height="918" rx="7" fill="#17212a" stroke="#60563e" stroke-width="1" />
+      <text x="1042" y="279" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#dfc98f" font-weight="700">State elements</text>
+      <text x="1042" y="309" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Meaning</text>
+      <text x="1042" y="332" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What information or</text>
+      <text x="1042" y="356" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">condition matters, and</text>
+      <text x="1042" y="380" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">to whom?</text>
+      <line x1="1042" y1="581" x2="1241" y2="581" stroke="#60563e" stroke-width="1" />
+      <text x="1042" y="605" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Representation</text>
+      <text x="1042" y="628" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">How is that state</text>
+      <text x="1042" y="652" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">represented? Where</text>
+      <text x="1042" y="676" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">can it be found?</text>
+      <line x1="1042" y1="876" x2="1241" y2="876" stroke="#60563e" stroke-width="1" />
+      <text x="1042" y="900" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Operations</text>
+      <text x="1042" y="923" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What creates,</text>
+      <text x="1042" y="947" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">changes, derives, or</text>
+      <text x="1042" y="971" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">reads it?</text>
+    </g>
+  </g>
+  <g data-perspective="Verification">
+    <rect x="1275" y="157" width="231" height="79" rx="8" fill="#2e293b" stroke="#5b4e70" stroke-width="1" />
+    <line x1="1287" y1="159" x2="1494" y2="159" stroke="#ccb8f0" stroke-width="3" />
+    <text x="1291" y="205" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#ccb8f0" font-weight="700">Verification</text>
+    <g data-facet="Tests">
+      <rect x="1275" y="249" width="231" height="918" rx="7" fill="#17212a" stroke="#5b4e70" stroke-width="1" />
+      <text x="1291" y="279" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#ccb8f0" font-weight="700">Tests</text>
+      <text x="1291" y="309" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Target</text>
+      <text x="1291" y="332" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Which intention, rule,</text>
+      <text x="1291" y="356" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">or required capability</text>
+      <text x="1291" y="380" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">does this test check?</text>
+      <line x1="1291" y1="557" x2="1490" y2="557" stroke="#5b4e70" stroke-width="1" />
+      <text x="1291" y="581" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Test boundary</text>
+      <text x="1291" y="604" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">What scenario</text>
+      <text x="1291" y="628" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">exercises it? Which</text>
+      <text x="1291" y="652" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">real parts need to</text>
+      <text x="1291" y="676" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">participate?</text>
+      <line x1="1291" y1="852" x2="1490" y2="852" stroke="#5b4e70" stroke-width="1" />
+      <text x="1291" y="876" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#acbdc6" font-weight="700">Review</text>
+      <text x="1291" y="899" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">Where is the test</text>
+      <text x="1291" y="923" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">defined? What would</text>
+      <text x="1291" y="947" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">a reviewer look for in</text>
+      <text x="1291" y="971" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">its assertions and</text>
+      <text x="1291" y="995" font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#edf1f2">results?</text>
+    </g>
+  </g>
+  <g data-from="Components" data-to="Architectural participants" data-relation="belongs to">
+    <path d="M 631.5 1167 V 1200 H 406.5 V 1168" fill="none" stroke="#a6bac4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ordinary-arrow)" />
+    <circle cx="631.5" cy="1167" r="3.7" fill="#a6bac4" />
+    <rect x="471.75" y="1187" width="94.5" height="27" rx="4" fill="#131b23" stroke="none" stroke-width="1" />
+    <text x="519.0" y="1206" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#a6bac4" font-weight="700" text-anchor="middle">belong to</text>
+  </g>
+  <g data-from="Components" data-to="Exchanges" data-relation="communicates through">
+    <path d="M 655.5 1167 V 1200 H 880.5 V 1168" fill="none" stroke="#a6bac4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ordinary-arrow)" />
+    <circle cx="655.5" cy="1167" r="3.7" fill="#a6bac4" />
+    <rect x="670" y="1187" width="196" height="27" rx="4" fill="#131b23" stroke="none" stroke-width="1" />
+    <text x="768" y="1206" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#a6bac4" font-weight="700" text-anchor="middle">communicate through</text>
+  </g>
+  <g data-from="Exchanges" data-to="State elements" data-relation="carries">
+    <path d="M 904.5 1167 V 1200 H 1129.5 V 1168" fill="none" stroke="#a6bac4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ordinary-arrow)" />
+    <circle cx="904.5" cy="1167" r="3.7" fill="#a6bac4" />
+    <rect x="987.25" y="1187" width="59.5" height="27" rx="4" fill="#131b23" stroke="none" stroke-width="1" />
+    <text x="1017.0" y="1206" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#a6bac4" font-weight="700" text-anchor="middle">carry</text>
+  </g>
+  <g data-from="Tests" data-to="Required capabilities" data-relation="targets">
+    <path d="M 1390.5 1167 V 1245 H 145.5 V 1168" fill="none" stroke="#ccb8f0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#evidence-arrow)" />
+    <circle cx="1390.5" cy="1167" r="3.7" fill="#ccb8f0" />
+    <rect x="735.5" y="1232" width="65.0" height="27" rx="4" fill="#131b23" stroke="none" stroke-width="1" />
+    <text x="768.0" y="1251" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#ccb8f0" font-weight="700" text-anchor="middle">target</text>
+  </g>
+</svg>

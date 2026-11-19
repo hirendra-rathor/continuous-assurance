@@ -1,0 +1,133 @@
+name: Release standalone skills
+run-name: Skills ${{ inputs.operation || 'build' }} · ${{ github.ref_name }}
+
+on:
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Build on staging main, or attach the tested ZIP on the release tag
+        type: choice
+        options: [build, attach]
+        default: build
+        required: true
+      build_run_id:
+        description: For attach, the successful staging build run ID
+        type: string
+      zip_sha256:
+        description: For attach, the SHA-256 of the ZIP used in reader trials
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    if: inputs.operation != 'attach'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check the selected revision
+        if: github.event_name == 'workflow_dispatch'
+        run: test "$GITHUB_REF" = refs/heads/main
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Package the two standalone skills
+        shell: python
+        run: |
+          import hashlib
+          import os
+          from pathlib import Path
+          from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
+
+          root = Path("distribution/skills")
+          names = ("ca-design-proposal", "ca-explore-design")
+          files = {"LICENSE": Path("LICENSE")}
+          for name in names:
+              package = root / name
+              marker = package / ".continuous-assurance-install-owner"
+              if marker.read_bytes() != f"{name}:v1\n".encode():
+                  raise ValueError(f"Unrecognized installer ownership marker in {package}")
+              for member in (package, *sorted(package.rglob("*"))):
+                  if member.is_symlink():
+                      raise ValueError(f"Export the reviewed content as ordinary files: {member}")
+                  if member.is_file():
+                      files[str(member.relative_to(root))] = member
+              for required in ("SKILL.md", "agents/openai.yaml"):
+                  if f"{name}/{required}" not in files:
+                      raise ValueError(f"Missing {required} in {package}")
+          for guide in ("software-system-language.md", "using-source-evidence.md"):
+              copies = [files[f"{name}/references/{guide}"].read_bytes() for name in names]
+              if copies[0] != copies[1]:
+                  raise ValueError(f"The two exported copies of {guide} differ")
+
+          archive = Path("ca-skills.zip")
+          with ZipFile(archive, "w") as output:
+              for relative, source in sorted(files.items()):
+                  entry = ZipInfo(relative)  # Stable timestamp across checkouts.
+                  entry.create_system = 3
+                  entry.external_attr = 0o100644 << 16
+                  output.writestr(entry, source.read_bytes(), compress_type=ZIP_DEFLATED)
+          digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+          summary = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          with summary.open("a") as stream:
+              print(f"Commit `{os.environ['GITHUB_SHA']}`  ", file=stream)
+              print(f"ZIP SHA-256 `{digest}`", file=stream)
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: github.event_name != 'pull_request'
+        with:
+          name: ca-skills-${{ github.run_attempt }}
+          path: ca-skills.zip
+          if-no-files-found: error
+          retention-days: 90
+
+  attach:
+    if: github.event_name == 'workflow_dispatch' && inputs.operation == 'attach'
+    runs-on: ubuntu-latest
+    concurrency: attach-skills-${{ github.ref_name }}
+    permissions:
+      actions: read
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      BUILD_RUN: ${{ inputs.build_run_id }}
+      ZIP_SHA256: ${{ inputs.zip_sha256 }}
+    steps:
+      - name: Verify the selected build and retrieve the tested ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = refs/tags/0.1.0 || { echo "Select the 0.1.0 release tag." >&2; exit 1; }
+          [[ "$BUILD_RUN" =~ ^[1-9][0-9]*$ && "$ZIP_SHA256" =~ ^[a-f0-9]{64}$ ]] || {
+            echo "Supply the reviewed build run ID and ZIP SHA-256." >&2; exit 1;
+          }
+          run=$(gh api "repos/$GH_REPO/actions/runs/$BUILD_RUN")
+          attempt=$(jq -er --arg sha "$GITHUB_SHA" '
+            select(.path == ".github/workflows/release-skills.yml" and
+                   .event == "workflow_dispatch" and .head_branch == "main" and
+                   .conclusion == "success" and .head_sha == $sha) | .run_attempt
+          ' <<< "$run")
+          gh run download "$BUILD_RUN" --name "ca-skills-$attempt"
+          printf '%s  ca-skills.zip\n' "$ZIP_SHA256" | sha256sum -c -
+      - name: Attach the verified bytes for release-owner review
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="$GITHUB_REF_NAME"
+          current_commit=$(gh api "repos/$GH_REPO/commits/$tag" --jq .sha)
+          test "$current_commit" = "$GITHUB_SHA" || { echo "Release tag moved after dispatch." >&2; exit 1; }
+          release_id=$(gh api --paginate "repos/$GH_REPO/releases?per_page=100" |
+            jq -r --arg tag "$tag" '.[] | select(.tag_name == $tag) | .id')
+          if [[ -z "$release_id" ]]; then
+            gh release create "$tag" --verify-tag --draft --title "$tag" \
+              --notes 'Standalone Explore Design and Design Proposal skills for Codex and Claude Code.'
+          fi
+          release=$(gh release view "$tag" --json isDraft,assets)
+          if ! jq -e 'any(.assets[]; .name == "ca-skills.zip" and .state == "uploaded")' <<< "$release" > /dev/null; then
+            jq -e '.isDraft and all(.assets[]; .name != "ca-skills.zip")' <<< "$release" > /dev/null
+            gh release upload "$tag" ca-skills.zip
+          fi
+          gh release download "$tag" --pattern ca-skills.zip --dir attached
+          printf '%s  attached/ca-skills.zip\n' "$ZIP_SHA256" | sha256sum -c -
