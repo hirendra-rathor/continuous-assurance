@@ -30,7 +30,7 @@ I’d like to use Flask to serve the page and a JSON API. Plain HTML, CSS, and
 JavaScript are fine for the page, and I’d like to keep my library in a local
 SQLite database.
 
-Give me a design proposal [use $ca-design-proposal].
+Give me a design proposal [use /ca-design-proposal].
 ```
 
 #### Design overview
