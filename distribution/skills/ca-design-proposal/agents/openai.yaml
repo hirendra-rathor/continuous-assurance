@@ -1,0 +1,4 @@
+interface:
+  display_name: "CA Design Proposal"
+  short_description: "Develop and revise proposals through system perspectives"
+  default_prompt: "Use $ca-design-proposal to propose this change and explain its design and verification needs."

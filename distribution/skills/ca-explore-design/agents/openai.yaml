@@ -1,0 +1,4 @@
+interface:
+  display_name: "CA Explore Design"
+  short_description: "Understand a system and reason about changes"
+  default_prompt: "Use $ca-explore-design to answer this question using the repository’s code, tests, and documentation."
