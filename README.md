@@ -64,9 +64,9 @@ Extract the skills ZIP, or use the folders under `distribution/skills/` in a clo
 
 | Repository | Description | Walkthrough |
 | --- | --- | --- |
-| [Reading Shelf](https://github.com/hirendra-rathor/example-reading-shelf) | A **full-stack web application** where readers save article links, add notes, and organize articles into collections. | [Reading Shelf walkthrough](https://hirendra-rathor.github.io/examples/reading-shelf/) |
-| [Movie Seats](https://github.com/hirendra-rathor/example-movie-seats) | A **booking service** whose JSON API lets clients hold a group of seats for a screening, then confirm or cancel the reservation. | [Movie Seats walkthrough](https://hirendra-rathor.github.io/examples/movie-seats/) |
-| [Retry Kit](https://github.com/hirendra-rathor/example-retry-kit) | A **Python library** that lets callers choose which exceptions trigger a retry, how many attempts to allow, and how long to wait between attempts. | [Retry Kit walkthrough](https://hirendra-rathor.github.io/examples/retry-kit/) |
+| [Reading Shelf](https://github.com/hirendra-rathor/example-reading-shelf) | A **full-stack web application** where readers save article links, add notes, and organize articles into collections. | [Walkthrough](https://hirendra-rathor.github.io/examples/reading-shelf/) |
+| [Movie Seats](https://github.com/hirendra-rathor/example-movie-seats) | A **booking service** whose JSON API lets clients hold a group of seats for a screening, then confirm or cancel the reservation. | [Walkthrough](https://hirendra-rathor.github.io/examples/movie-seats/) |
+| [Retry Kit](https://github.com/hirendra-rathor/example-retry-kit) | A **Python library** that lets callers choose which exceptions trigger a retry, how many attempts to allow, and how long to wait between attempts. | [Walkthrough](https://hirendra-rathor.github.io/examples/retry-kit/) |
 
 ## License
 
