@@ -60,11 +60,13 @@ Extract the skills ZIP, or use the folders under `distribution/skills/` in a clo
 | Codex | `~/.codex/skills/` or `$CODEX_HOME/skills/` for a custom profile | `$ca-design-proposal` or `$ca-explore-design` |
 | Claude Code | `~/.claude/skills/` or `$CLAUDE_CONFIG_DIR/skills/` for a custom profile | `/ca-design-proposal` or `/ca-explore-design` |
 
-## Try the skills on a full stack application
+## Try the skills on different codebases
 
-Reading Shelf lets readers save articles, keep notes, and organize articles into collections. The walkthrough follows a developer from the first feature request to a working application.
-
-[Reading Shelf repository](https://github.com/hirendra-rathor/example-reading-shelf) · [Recorded walkthrough](https://hirendra-rathor.github.io/examples/reading-shelf/)
+| Repository | Description | Walkthrough |
+| --- | --- | --- |
+| [Reading Shelf](https://github.com/hirendra-rathor/example-reading-shelf) | A **full-stack web application** where readers save article links, add notes, and organize articles into collections. | [Walkthrough](https://hirendra-rathor.github.io/examples/reading-shelf/) |
+| [Movie Seats](https://github.com/hirendra-rathor/example-movie-seats) | A **booking service** whose JSON API lets clients hold a group of seats for a screening, then confirm or cancel the reservation. | [Walkthrough](https://hirendra-rathor.github.io/examples/movie-seats/) |
+| [Retry Kit](https://github.com/hirendra-rathor/example-retry-kit) | A **Python library** that lets callers choose which exceptions trigger a retry, how many attempts to allow, and how long to wait between attempts. | [Walkthrough](https://hirendra-rathor.github.io/examples/retry-kit/) |
 
 ## License
 
